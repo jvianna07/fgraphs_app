@@ -1,0 +1,28 @@
+<Homescreen>:
+    MDScrollView:
+        do_scroll_x:False
+        do_scroll_y:True
+        MDBoxLayout:
+            id:mybox
+            orientation: 'vertical'
+            size_hint_y: 0.9
+            pos_hint:{"center_y":0.8}
+            padding:10
+            spacing:10
+            Camera:
+                id:camera
+                resolution:(540,480)
+                play:True
+            MDFabButton:
+                icon:"camera"
+                pos_hint:{"center_x":0.5}
+                on_release:root.captureyouface()
+            Image:
+                id:last_photo
+                size_hint_y: None
+                height: dp(150)
+                size_hint_x: None
+                width: dp(150)
+                allow_stretch: True
+                keep_ratio: True
+                pos_hint: {"center_x": 0.5}
