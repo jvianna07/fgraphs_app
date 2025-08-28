@@ -43,7 +43,7 @@ O app ainda está em construção. Porém a estrutura de arquivos é a seguinte:
 ├── requirements.txt
 └── test.py
 ```
-### Arquivos *.py. *.kv e *.txt
+### Arquivos *.py, *.kv e *.txt
 - `main.py` - classe principal do App.
 - `classifier.py` - contém a classe principal do modelo classificador.
 - `test.py` - ficheiro de teste apenas. Será descartado futuramente.
@@ -59,4 +59,4 @@ O app ainda está em construção. Porém a estrutura de arquivos é a seguinte:
 ## Futuras implementações
 * capturar foto para depois processar e classificar;
 * optimizar o App;
-* empacotamento do App para *.apk versão mobile (android e ios).
+* empacotamento do App para *.apk versão mobile (Android e iOS).
