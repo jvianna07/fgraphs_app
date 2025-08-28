@@ -24,7 +24,7 @@ cd fgraphs_app/
 
 Crie um ambiente virtual com python>=3.10. Ative o ambiente virtual e instale as dependências.
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Execução
@@ -43,20 +43,20 @@ O app ainda está em construção. Porém a estrutura de arquivos é a seguinte:
 ├── requirements.txt
 └── test.py
 ```
-### Arquivos *.py
+### Arquivos *.py. *.kv e *.txt
 - `main.py` - classe principal do App.
 - `classifier.py` - contém a classe principal do modelo classificador.
 - `test.py` - ficheiro de teste apenas. Será descartado futuramente.
 - `requirements.txt` - dependências do app.
-- `homescreen.kv` - classe de manipulaçoa de widgets do kivy App.
-- `README.md` - ficheito de instruções.
+- `homescreen.kv` - classe de manipulação de widgets do kivy App.
+- `README.md` - ficheiro de instruções.
 
-### Directórios
+### Diretórios
 - `demo_imags/` - contém algumas imagens demo. Será descartada futuramente.
 - `fotos/` - contém as fotos que são capturadas pela câmara.
 - `models/ ` - contém o(s) modelo(s) pré-treinado(s).
 
 ## Futuras implementações
-* capturar foto para depois processar e classificar
-* optimizar o App
-* empacotamento do App para apk versão mobile (android e ios)
+* capturar foto para depois processar e classificar;
+* optimizar o App;
+* empacotamento do App para *.apk versão mobile (android e ios).
