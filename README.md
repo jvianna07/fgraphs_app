@@ -27,7 +27,7 @@ Crie um ambiente virtual com python>=3.10. Ative o ambiente virtual e instale as
 pip install -r requirements.txt
 ```
 
-## Execução
+## Estrutura do App
 O app ainda está em construção. Porém a estrutura de arquivos é a seguinte:
 ```bash
 .
