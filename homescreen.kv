@@ -1,7 +1,9 @@
+#: import MDFDloatingActionButton kivymd.uix.button.MDFloatingActionButton
 <Homescreen>:
     MDScrollView:
         do_scroll_x:False
         do_scroll_y:True
+        
         MDBoxLayout:
             id:mybox
             orientation: 'vertical'
@@ -9,20 +11,36 @@
             pos_hint:{"center_y":0.8}
             padding:10
             spacing:10
+
             Camera:
                 id:camera
                 resolution:(540,480)
                 play:True
-            MDFabButton:
+            
+            Label:
+                id:tipo
+                size_hint_y: None
+                height: "50dp"
+                pos_hint: {"center_y": 0.5}
+                text:'classificação:'
+                halign:'center'
+                valign:'middle'
+                color: 0, 0, 0, 1
+
+            MDFloatingActionButton:
                 icon:"camera"
-                pos_hint:{"center_x":0.5}
+                height: "10dp"
+                pos_hint:{"center_x": 0.5}
                 on_release:root.captureyouface()
+
             Image:
                 id:last_photo
                 size_hint_y: None
-                height: dp(150)
+                height: dp(200)
                 size_hint_x: None
-                width: dp(150)
+                width: dp(200)
                 allow_stretch: True
                 keep_ratio: True
                 pos_hint: {"center_x": 0.5}
+        
+            
